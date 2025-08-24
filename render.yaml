@@ -1,0 +1,9 @@
+services:
+  - type: app
+    name: cyberpunk-hack-chat-bot
+    env: python
+    region: india
+    plan: free            # free plan, can upgrade later
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    autoDeploy: true
